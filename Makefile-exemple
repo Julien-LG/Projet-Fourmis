@@ -1,0 +1,5 @@
+tests: tests.o coords.o ants.o places.o game.o
+    $(CXX) -o $@ $^ $(LDFLAGS)
+    
+tests: tests.o coords.o
+    $(CXX) -o $@ $^ $(LDFLAGS)
